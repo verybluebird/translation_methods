@@ -1,0 +1,4 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Application Type\Linux\1.0\Linux.targets(184,5): error : Истекло время ожидания выполнения команды "realpath -m -L ~/projects/Project1/bin/x64/Debug/". Время ожидания — 15013,7789 мс.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Application Type\Linux\1.0\Linux.targets(184,5): error :    в liblinux.IO.RemoteFileSystemImpl.GetFullPath(String remotePath)
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Application Type\Linux\1.0\Linux.targets(184,5): error :    в Microsoft.Build.Linux.Tasks.ResolveRemoteDir.ShouldExecuteTool()
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Application Type\Linux\1.0\Linux.targets(184,5): error :    в Microsoft.Build.Linux.Tasks.RemoteToolTask.Execute()
