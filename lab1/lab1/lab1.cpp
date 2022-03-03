@@ -6,11 +6,20 @@
 
 int main()
 {
-    const_table separators("separators.txt");
-    const_table words("words.txt");
-    const_table alphabet("alphabet.txt");
-    const_table operations("operations.txt");
+    Tables tables = Tables();
 
+    string c = tables.separators.get(2);
+    int i = tables.separators.search("{");
+
+    trio id = tables.find("{");
+     id = tables.find("a");
+     id = tables.find("if");
+     id = tables.find("for");
+     string v = "hello";
+     identifier var = identifier("a", 0,v );
+     tables.variables.set(var);
+     var = identifier("a", 0, v);
+     id = tables.find("a");
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"

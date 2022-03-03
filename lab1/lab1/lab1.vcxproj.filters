@@ -40,5 +40,8 @@
     <Text Include="alphabet.txt">
       <Filter>Исходные файлы</Filter>
     </Text>
+    <Text Include="digits.txt">
+      <Filter>Исходные файлы</Filter>
+    </Text>
   </ItemGroup>
 </Project>
