@@ -19,7 +19,12 @@ int main()
      identifier var = identifier("a", 0,v );
      tables.variables.set(var);
      var = identifier("a", 0, v);
+     tables.variables.search("a");
      id = tables.find("a");
+     tables.variables.setvalue("a", "bi");
+     tables.variables.getvalue(1, 0);
+     tables.variables.settype(2, 1,0);
+     tables.variables.gettype(1, 0);
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"

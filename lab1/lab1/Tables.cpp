@@ -17,8 +17,8 @@ const_table::const_table(string filename)
 
 const_table::const_table()
 {
-
 }
+
 
 string const_table::get(int number)
 {	
@@ -81,7 +81,7 @@ void variable_table::setvalue(string name, string value)
 {
 	pair <int, int> index = search(name);
 	
-	if (index.first == -1)
+	if (index.first != -1)
 	{
 		table[index.first][index.second].value=value;		
 	}
@@ -130,10 +130,10 @@ int variable_table::calc_hash(string name)
 		hash = hash * a + name[i];
 		a = a * b;
 	}
-	return (hash & 0x7FFFFFFF);//хз
+	return (hash & 0x7FFFFFFF);//убирает знаковый бит
 
 }
-
+/*------------------------------------------*/
 identifier::identifier(string nam, int typ, string valu)
 {
 	name = nam;
@@ -147,12 +147,12 @@ identifier::identifier()
 	type = 0;
 	value = "0";
 }
-
+/*------------------------------------------*/
 Tables::Tables()
 {
 
-	words= const_table("words.txt");
-	operations= const_table("operations.txt");
+	words = const_table("words.txt");
+	operations = const_table("operations.txt");
 	separators = const_table("separators.txt");
 	alphabet = const_table("alphabet.txt");
 	digits = const_table("digits.txt");
@@ -183,7 +183,7 @@ trio Tables::find(string c)
 	return trio(-1, 0);
 
 }
-
+/*------------------------------------------*/
 trio::trio(int t, int i, int si)
 {
 	table = t;

@@ -1,2 +1,19 @@
-﻿  lab1.cpp
-  lab1.vcxproj -> C:\Users\Barsik\source\repos\translation_methods-main\lab1\x64\Debug\lab1.exe
+﻿  Tables.cpp
+C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.30.30705\include\utility(190,48): warning C4267: инициализация: преобразование из "size_t" в "_Ty2"; возможна потеря данных
+          with
+          [
+              _Ty2=int
+          ]
+C:\Users\Юлия\source\repos\asm2\lab1\lab1\Tables.cpp(60): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::pair<int,int>::pair<unsigned int&,unsigned __int64,0>(_Other1,_Other2 &&) noexcept"
+          with
+          [
+              _Other1=unsigned int &,
+              _Other2=unsigned __int64
+          ]
+C:\Users\Юлия\source\repos\asm2\lab1\lab1\Tables.cpp(60): message : выполняется компиляция ссылки на экземпляр шаблон функции "std::pair<int,int>::pair<unsigned int&,unsigned __int64,0>(_Other1,_Other2 &&) noexcept"
+          with
+          [
+              _Other1=unsigned int &,
+              _Other2=unsigned __int64
+          ]
+  lab1.vcxproj -> C:\Users\Юлия\source\repos\asm2\lab1\x64\Debug\lab1.exe
