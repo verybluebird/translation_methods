@@ -7,7 +7,7 @@ const_table::const_table(string filename)
 	ifstream rfile (filename);
 	if (rfile.is_open()) { 
 		string s;
-		while (!rfile.eof()) { // keep reading until end-of-file
+		while (!rfile.eof()) {
 			getline(rfile, s);
 			table.push_back(s);
 		}
@@ -87,6 +87,12 @@ void variable_table::setvalue(string name, string value)
 	}
 }
 
+void variable_table::setvalue(string value, int hash, int i)
+{
+	table[hash][i].value = value;
+
+}
+
 pair <int, int> variable_table::search(string name)
 {
 	int hash = calc_hash(name) % table.size();
@@ -132,6 +138,23 @@ int variable_table::calc_hash(string name)
 	}
 	return (hash & 0x7FFFFFFF);//убирает знаковый бит
 
+}
+void variable_table::print_table(string filename)
+{
+	ofstream rfile(filename);
+	if (rfile.is_open()) {
+		while (!rfile.eof()) {
+			for (int i = 0; i < table.size(); ++i)
+			{
+				for (int j = 0; j < table[i].size(); ++j)
+				{
+					rfile << "(" << i << ", " << j << "): (" << table[i][j].name << ", " << table[i][j].type << ", " << table[i][j].value << ");\n";
+				}
+			}
+
+		}
+	}
+	rfile.close();
 }
 /*------------------------------------------*/
 identifier::identifier(string nam, int typ, string valu)
@@ -198,3 +221,4 @@ trio::trio(int t, pair<int, int> par_index)
 	sind = par_index.second;
 	
 }
+

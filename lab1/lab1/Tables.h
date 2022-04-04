@@ -45,11 +45,13 @@ public:
 	pair <int, int> set(identifier id);
 	pair <int, int> setname(string name);
 	void setvalue(string name, string value);
+	void setvalue(string value, int hash, int i);
 	pair <int, int> search(string name); 
 	pair <int, int> search(identifier id);
 	int gettype( int hash, int i);
 	string getvalue(int hash, int i);
 	int calc_hash(string name);
+	void print_table(string fname);
 	
 };
 class Tables

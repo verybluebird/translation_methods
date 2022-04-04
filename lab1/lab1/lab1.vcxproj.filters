@@ -21,9 +21,15 @@
     <ClCompile Include="Tables.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="dfa.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Tables.h">
+      <Filter>Исходные файлы</Filter>
+    </ClInclude>
+    <ClInclude Include="dfa.h">
       <Filter>Исходные файлы</Filter>
     </ClInclude>
   </ItemGroup>
@@ -41,6 +47,15 @@
       <Filter>Исходные файлы</Filter>
     </Text>
     <Text Include="digits.txt">
+      <Filter>Исходные файлы</Filter>
+    </Text>
+    <Text Include="matr.txt">
+      <Filter>Исходные файлы</Filter>
+    </Text>
+    <Text Include="tokens.txt">
+      <Filter>Исходные файлы</Filter>
+    </Text>
+    <Text Include="code.txt">
       <Filter>Исходные файлы</Filter>
     </Text>
   </ItemGroup>

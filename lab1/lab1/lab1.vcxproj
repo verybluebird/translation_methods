@@ -139,17 +139,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="dfa.cpp" />
     <ClCompile Include="lab1.cpp" />
     <ClCompile Include="Tables.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="dfa.h" />
     <ClInclude Include="Tables.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="alphabet.txt" />
+    <Text Include="code.txt" />
     <Text Include="digits.txt" />
+    <Text Include="matr.txt" />
     <Text Include="operations.txt" />
     <Text Include="separators.txt" />
+    <Text Include="tokens.txt" />
     <Text Include="words.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
